@@ -3,37 +3,39 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>My Weather App</title>
+    <title>Weather Api Data</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <main>
+    
         <header>
-            <h1>My Weather App</h1>
+            <h1>Weather Api Data</h1>
         </header>
+     
+                
+                    <div id="targetArea"></div>
+                <label>Api Key:</label>
+                <input type="text" name="keyFfield" id="keyFfield">
+                <label>Zip Code:</label> 
+                <input type="text" name="zipcodefield" id="zipcodefield">
+                <button id="submit">Submit</button>
+                <button id="clearkey">Clear Key</button>
+            
+   <section id="details" aria-live="polite" aria-relevant="additions removals">
 
-        <section id="form">
-            <form>
-                <div id="apikey">
-                    <label>Enter your API key:</label>
-                    <input type="text" name="apikey" id="apikey">
-                </div>
-                <label>Zip Code:</label>
-                <input type="text" name="zip" id="zip">
-            </form>
-        </section>
+   </section>
 
-        <section id="weather" aria-live="polite" aria-relevant="additions removals"></section>
 
-    </main>
+
+    
     
         
-    <!-- jQuery -->
+   
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" language="Javascript"></script>
+    
 
-    <!-- javascript -->
+   
     <script src="js/script.js"></script>
 
 </body>
